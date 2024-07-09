@@ -17,46 +17,47 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+
+    <!-- header, un navbar fijo y una carrusel con 3 imagenes -->
+
     <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <div class="container-fluid px-5">
+            <a class="navbar-brand text-white" href="#">Viajes Chile</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Destacados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            </nav>
       <div id="Carousel-main" class="carousel slide">
         <div class="carousel-inner">
-          <div class="container">
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Viajes Chile</a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
           <div class="carousel-item active">
             <img
               src="./assets/img/carousel1.jpg"
@@ -99,7 +100,10 @@
         </button>
       </div>
     </header>
-    <section id="Descripcion" class="container">
+
+    <!-- "Descripcion" de los servicios? esta seccion se esconde al verse en pantallas pequeñas -->
+    
+    <section id="Descripcion" class="container d-none d-ms-block d-lg-block">
       <h4 class="text-center my-3">¿QUIÉNES SOMOS?</h2>
         <hr class="bar text-white">
       <div class="row">
@@ -134,13 +138,16 @@
         </div>
       </div>
     </section>
+
+    <!-- Lugares destacados de chile, al verse en pantallas medianas se ven 2 cartas y 4 en pantallas pequeñas -->
+    
     <section class="descatados">
       <h4 class="text-center my-3">DESTACADOS</h4>
       <hr class="bar text-white">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-3" >
-            <div class="card bg-info" style="width: 15rem">
+          <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card1.jpg"
                 class="card-img-top"
@@ -157,8 +164,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3" >
-            <div class="card bg-info" style="width: 15rem">
+          <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card2.jpg"
                 class="card-img-top"
@@ -175,8 +182,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3" >
-            <div class="card bg-info" style="width: 15rem">
+          <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card3.jpg"
                 class="card-img-top"
@@ -193,8 +200,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3" >
-            <div class="card bg-info" style="width: 15rem">
+          <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card4.jpg"
                 class="card-img-top"
@@ -214,6 +221,9 @@
         </div>
       </div>
     </section>
+
+    <!-- Un formulario simple -->
+
     <section class="contacto my-5">
         <h4 class="text-center my-">CONTACTO</h4>
         <hr class="bar">
@@ -235,13 +245,16 @@
               </form>
         </div>
     </section>
+
+    <!-- Cada icono le lleva a su pagina, en el caso twitter ahora lleva a x.com porque se cambio -->
+
     <footer class="bg-info text-center">
         <div class="row container d-flex justify-content-center">
             <div class="col-6 my-auto">
                 <h3>VIAJES CHILE</h3>
             </div>
             <div class="col-6 my-auto">
-                <i class="fa-brands fa-github mx-2"></i> <i class="fa-brands fa-linkedin mx-2"></i> <i class="fa-brands fa-square-twitter mx-2"></i><i class="fa-brands fa-facebook mx-2"></i>
+                <a href="https://github.com/"><i class="fa-brands fa-github mx-2"></i></a> <a href="https://cl.linkedin.com/"><i class="fa-brands fa-linkedin mx-2"></i></a> <a href="https://x.com/"><i class="fa-brands fa-square-twitter mx-2"></i></a> <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook mx-2"></i></a> 
             </div>
         </div>
     </footer>
