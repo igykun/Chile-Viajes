@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Viajes - Chile</title>
+    <link rel="shortcut icon" href="assets/img/viajes.svg" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,12 +19,18 @@
   </head>
   <body>
 
+        
+    <button onclick="topFunction()" id="bktop" title="Go to top">Volver arriba</button>
+
     <!-- header, un navbar fijo y una carrusel con 3 imagenes -->
 
-    <header class="header">
+    <header id="Inicio" class="header">
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
           <div class="container-fluid px-5">
-            <a class="navbar-brand text-white" href="#">Viajes Chile</a>
+            <a class="navbar-brand" href="#">
+              <img src="./assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              Viajes Chile
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -41,16 +48,16 @@
             >
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Inicio</a>
+                  <a class="nav-link text-white" href="#Inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Quienes somos</a>
+                  <a class="nav-link text-white" href="#Descripcion">Quienes somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Destacados</a>
+                  <a class="nav-link text-white" href="#Destacados">Destacados</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Contacto</a>
+                  <a class="nav-link text-white" href="#Contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -108,8 +115,8 @@
         <hr class="bar text-white">
       <div class="row">
         <div class="col-4 text-center">
-          <p class="bg-info"><i class="fa-solid fa-plane text-white"></i></p>
-          <p>
+          <p class="bg-info  icono-desc-1"><i class="fa-solid fa-plane text-white"></i></p>
+          <p class="text-descripcion-1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt
             facere distinctio blanditiis, quidem vitae debitis odio, nulla quis,
             perferendis fugiat dolores aliquam dolorum repellendus enim veniam
@@ -117,19 +124,19 @@
           </p>
         </div>
         <div class="col-4 text-center">
-          <p>
+          <p class="text-descripcion-2">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
             porro quis officiis libero distinctio maxime dicta obcaecati soluta
             eius. Reiciendis soluta totam numquam quasi laudantium excepturi
             consequuntur aperiam rem explicabo?
           </p>
-          <p class="bg-info">
+          <p class="bg-info  icono-desc-2">
             <i class="fa-solid fa-triangle-exclamation text-white"></i>
           </p>
         </div>
         <div class="col-4 text-center">
-          <p class="bg-info"><i class="fa-solid fa-route text-white"></i></p>
-          <p>
+          <p class="bg-info icono-desc-3"><i class="fa-solid fa-route text-white"></i></p>
+          <p class="text-descripcion-3">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae iure maxime rerum dignissimos quas tenetur deleniti
             totam sed in dolorem odio odit quidem, laudantium, ipsam debitis
@@ -141,17 +148,18 @@
 
     <!-- Lugares destacados de chile, al verse en pantallas medianas se ven 2 cartas y 4 en pantallas pequeñas -->
     
-    <section class="descatados">
+    <section id="Destacados" class="descatados">
       <h4 class="text-center my-3">DESTACADOS</h4>
       <hr class="bar text-white">
       <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-12 col-md-6 col-lg-3" >
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" >
             <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card1.jpg"
                 class="card-img-top"
                 alt="carta 1"
+                 height="180"
               />
               <div class="card-body">
                 <h5 class="card-title">Titulo 1</h5>
@@ -164,12 +172,13 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3" >
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" >
             <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card2.jpg"
                 class="card-img-top"
                 alt="carta 1"
+                height="180"
               />
               <div class="card-body">
                 <h5 class="card-title">Titulo 2</h5>
@@ -182,12 +191,13 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3" >
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" >
             <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card3.jpg"
                 class="card-img-top"
                 alt="carta 1"
+                height="180"
               />
               <div class="card-body">
                 <h5 class="card-title">Titulo 3</h5>
@@ -200,12 +210,13 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3" >
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" >
             <div class="card bg-info my-2" style="width: 15rem">
               <img
                 src="./assets/img/card4.jpg"
                 class="card-img-top"
                 alt="carta 1"
+                height="180"
               />
               <div class="card-body">
                 <h5 class="card-title">Titulo 4</h5>
@@ -224,27 +235,28 @@
 
     <!-- Un formulario simple -->
 
-    <section class="contacto my-5">
+    <section id="Contacto" class="contacto my-5">
         <h4 class="text-center my-">CONTACTO</h4>
         <hr class="bar">
         <div class="container">
             <form>
                 <div class="mb-3">
                   <label for="Nombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="Nombre">
+                  <input type="text" class="form-control" id="Nombre" data-bs-toggle="tooltip"data-bs-placement="top" title="Ingrese su nombre" required>
                 </div>
                 <div class="mb-3">
                   <label for="Asunto" class="form-label">Asunto</label>
-                  <input type="text" class="form-control" id="Asunto">
+                  <input type="text" class="form-control" id="Asunto" data-bs-toggle="tooltip"data-bs-placement="top" title="Ingrese el motivo de la consulta" required>
                 </div>
                 <div class="mb-3">
                     <label for="Mensaje" class="form-label">Mensaje</label>
-                    <input type="text-box" class="form-control" id="Mensaje">
+                    <textarea type="text" class="form-control" id="Mensaje" data-bs-toggle="tooltip"data-bs-placement="top" title="Ingrese su mensaje" required></textarea>
                   </div>
-                <button type="submit" class="btn btn-primary bg-info">Enviar</button>
+                <button id="Btn-enviar" type="submit" class="btn btn-primary bg-info">Enviar</button>
               </form>
         </div>
     </section>
+
 
     <!-- Cada icono le lleva a su pagina, en el caso twitter ahora lleva a x.com porque se cambio -->
 
@@ -254,10 +266,19 @@
                 <h3>VIAJES CHILE</h3>
             </div>
             <div class="col-6 my-auto">
-                <a href="https://github.com/"><i class="fa-brands fa-github mx-2"></i></a> <a href="https://cl.linkedin.com/"><i class="fa-brands fa-linkedin mx-2"></i></a> <a href="https://x.com/"><i class="fa-brands fa-square-twitter mx-2"></i></a> <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook mx-2"></i></a> 
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github mx-2"></i></a> <a href="https://cl.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin mx-2"></i></a> <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-twitter mx-2"></i></a> <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook mx-2"></i></a> 
             </div>
         </div>
     </footer>
+    <script>
+       function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
