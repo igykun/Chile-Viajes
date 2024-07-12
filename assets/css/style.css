@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+
 body {
     color: white;
     background-color: black;
+    font-family: "Montserrat";
 }
 
 #bktop {
@@ -22,3 +26,4 @@ body {
 #bktop:hover {
     background-color: #555;
 }
+
